@@ -1,48 +1,32 @@
 \section{Overall System Architecture}
-The wrkin.app platform is built on a modern, full-stack architecture. The system is designed to be scalable, secure, and maintainable. The architecture consists of a mobile-first frontend developed with Flutter, a robust backend powered by Django, and a PostgreSQL database. The communication between the frontend and backend is handled through a RESTful API, and real-time features are enabled by WebSockets.
+The wrkin.app platform is built on a modern, full-stack architecture. The frontend is a mobile application developed using Flutter, while the backend is a RESTful API built with Django. The database is PostgreSQL, with Redis used for caching. The system is designed to be scalable and modular, with a microservices-oriented structure to prepare for future growth.
+\newline
+[INSERT FIGURE: System Architecture Diagram]
 
 \section{Frontend Development - Flutter Framework}
-The frontend of the wrkin.app mobile application is developed using the Flutter framework.
+The mobile application is developed using Flutter 3.x and Dart 3.x with null safety. The BLoC (Business Logic Component) pattern is used for state management. The UI is built with custom widgets to create a unique and intuitive user experience. Key features implemented include:
 \begin{itemize}
-    \item \textbf{Version:} Flutter 3.x
-    \item \textbf{Language:} Dart 3.x with null safety
-    \item \textbf{Architecture Pattern:} BLoC (Business Logic Component)
-    \item \textbf{State Management:} Reactive programming with streams
-    \item \textbf{UI Components:} Custom widgets optimized for business applications
-    \item \textbf{Target Platforms:} Android (primary), iOS (secondary)
-    \item \textbf{Advanced Features:} Real-time communication via WebSockets, push notifications with Firebase Cloud Messaging, file management, camera integration, biometric authentication, and deep linking.
+    \item Real-time chat with WebSocket integration.
+    \item Push notifications using Firebase Cloud Messaging.
+    \item File management for multi-format uploads and downloads.
+    \item Camera integration for document scanning.
+    \item Biometric authentication for enhanced security.
 \end{itemize}
 
 \section{Backend Development - Django Framework}
-The backend is built with the Django framework, providing a secure and scalable foundation for the application.
+The backend is developed using Django 4.x and Python 3.11+. The Django REST Framework is used to create a RESTful API. Key features of the backend include:
 \begin{itemize}
-    \item \textbf{Version:} Django 4.x LTS
-    \item \textbf{Language:} Python 3.11+
-    \item \textbf{Architecture:} RESTful API with Django REST Framework
-    \item \textbf{Database:} PostgreSQL
-    \item \textbf{Authentication:} JWT tokens
-    \item \textbf{Advanced Features:} WebSocket support via Django Channels, cloud storage integration (AWS S3/Google Cloud Storage), background tasks with Celery and Redis, and robust security measures.
+    \item JWT-based authentication with refresh tokens.
+    \item WebSocket support for real-time features via Django Channels.
+    \item Cloud storage integration with AWS S3 for file management.
+    \item Asynchronous task processing with Celery and Redis.
+    \item Security features such as rate limiting and CORS protection.
 \end{itemize}
 
 \section{Database Design and Management}
-The database is designed to be efficient and scalable.
-\begin{itemize}
-    \item \textbf{Schema Design:} Normalized database structure with performance indexes.
-    \item \textbf{Relationships:} Complex many-to-many relationships for users, teams, projects, and tasks.
-    \item \textbf{Query Optimization:} Database query analysis and optimization.
-    \item \textbf{Data Migration:} Version-controlled schema changes with rollback capability.
-    \item \textbf{Backup Strategy:} Automated daily backups with point-in-time recovery.
-\end{itemize}
+The database schema is designed using a normalized structure with performance indexes. PostgreSQL is the primary database. The design includes complex many-to-many relationships to model users, teams, projects, and conversations. Database migrations are managed using Django's built-in migration system.
+\newline
+[INSERT FIGURE: Database Schema Diagram]
 
 \section{Development Environment and Tools}
-The development workflow is supported by a range of modern tools.
-\begin{itemize}
-    \item \textbf{Version Control:} Git with a feature branch workflow and pull request reviews.
-    \item \textbf{Issue Tracking:} Integrated bug tracking and feature request management.
-    \item \textbf{Testing:} Unit, integration, and end-to-end testing with a code coverage target of 80\%.
-    \item \textbf{CI/CD:} Automated testing and deployment pipeline.
-    \item \textbf{IDE/Editors:} Android Studio, Visual Studio Code, PyCharm.
-    \item \textbf{Design Tools:} Figma for UI/UX mockups.
-    \item \textbf{API Testing:} Postman for endpoint testing.
-    \item \textbf{Database Tools:} pgAdmin for PostgreSQL management.
-\end{itemize}
+The development environment consists of Android Studio and Visual Studio Code for coding, Figma for UI/UX design, and Postman for API testing. Git is used for version control, with a feature branch workflow and and mandatory code reviews. The CI/CD pipeline includes automated testing to ensure code quality.
