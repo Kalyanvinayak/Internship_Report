@@ -1,6 +1,48 @@
-\lipsum
- \section{Overall System Architecture}
- \section{Frontend Development - Flutter Framework}
- \section{Backend Development - Django Framework}
- \section{Database Design and Management}
+\section{Overall System Architecture}
+The wrkin.app platform is built on a modern, full-stack architecture. The system is designed to be scalable, secure, and maintainable. The architecture consists of a mobile-first frontend developed with Flutter, a robust backend powered by Django, and a PostgreSQL database. The communication between the frontend and backend is handled through a RESTful API, and real-time features are enabled by WebSockets.
+
+\section{Frontend Development - Flutter Framework}
+The frontend of the wrkin.app mobile application is developed using the Flutter framework.
+\begin{itemize}
+    \item \textbf{Version:} Flutter 3.x
+    \item \textbf{Language:} Dart 3.x with null safety
+    \item \textbf{Architecture Pattern:} BLoC (Business Logic Component)
+    \item \textbf{State Management:} Reactive programming with streams
+    \item \textbf{UI Components:} Custom widgets optimized for business applications
+    \item \textbf{Target Platforms:} Android (primary), iOS (secondary)
+    \item \textbf{Advanced Features:} Real-time communication via WebSockets, push notifications with Firebase Cloud Messaging, file management, camera integration, biometric authentication, and deep linking.
+\end{itemize}
+
+\section{Backend Development - Django Framework}
+The backend is built with the Django framework, providing a secure and scalable foundation for the application.
+\begin{itemize}
+    \item \textbf{Version:} Django 4.x LTS
+    \item \textbf{Language:} Python 3.11+
+    \item \textbf{Architecture:} RESTful API with Django REST Framework
+    \item \textbf{Database:} PostgreSQL
+    \item \textbf{Authentication:} JWT tokens
+    \item \textbf{Advanced Features:} WebSocket support via Django Channels, cloud storage integration (AWS S3/Google Cloud Storage), background tasks with Celery and Redis, and robust security measures.
+\end{itemize}
+
+\section{Database Design and Management}
+The database is designed to be efficient and scalable.
+\begin{itemize}
+    \item \textbf{Schema Design:} Normalized database structure with performance indexes.
+    \item \textbf{Relationships:} Complex many-to-many relationships for users, teams, projects, and tasks.
+    \item \textbf{Query Optimization:} Database query analysis and optimization.
+    \item \textbf{Data Migration:} Version-controlled schema changes with rollback capability.
+    \item \textbf{Backup Strategy:} Automated daily backups with point-in-time recovery.
+\end{itemize}
+
 \section{Development Environment and Tools}
+The development workflow is supported by a range of modern tools.
+\begin{itemize}
+    \item \textbf{Version Control:} Git with a feature branch workflow and pull request reviews.
+    \item \textbf{Issue Tracking:} Integrated bug tracking and feature request management.
+    \item \textbf{Testing:} Unit, integration, and end-to-end testing with a code coverage target of 80\%.
+    \item \textbf{CI/CD:} Automated testing and deployment pipeline.
+    \item \textbf{IDE/Editors:} Android Studio, Visual Studio Code, PyCharm.
+    \item \textbf{Design Tools:} Figma for UI/UX mockups.
+    \item \textbf{API Testing:} Postman for endpoint testing.
+    \item \textbf{Database Tools:} pgAdmin for PostgreSQL management.
+\end{itemize}

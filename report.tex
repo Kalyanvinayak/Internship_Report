@@ -17,6 +17,7 @@
 \usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage{lipsum}
+\usepackage{pdfpages}
 
 % Command for List of Abbreviations
 \newcommand{\listofabbreviations}{\chapter*{List of Abbreviations}\addcontentsline{toc}{chapter}{List of Abbreviations}}
@@ -208,7 +209,9 @@ Finally, I would like to thank the faculty of the Department of Electronics and 
 % Include any performance metrics or reports if available.
 
 \chapter{Internship Certificate and Recommendation Letters}
-% Insert scanned copies of the Internship Completion Certificate and Experience Letter.
+\includepdf[pages=-]{Completion_Certificate_Wrkin__KalyanVin.pdf}
+\includepdf[pages=-]{Offer_Letter_Kalyan_signed.pdf}
+\includepdf[pages=-]{ExperienceLettter_Kalyan_.pdf}
 
 \bibliography{report}
 \bibliographystyle{plain}
