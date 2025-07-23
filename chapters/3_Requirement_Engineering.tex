@@ -1,0 +1,93 @@
+\chapter{Requirement Engineering}
+
+\section{Introduction to Requirement Engineering at wrkin.app}
+
+Requirement engineering formed a critical phase in the internship at wrkin.app, especially given the product's ambitious vision of redefining workplace collaboration through a unified HRMS, communication, and task management platform. In this high-growth startup environment, where priorities often shift rapidly, requirement engineering needed to be dynamic yet structured enough to support reliable development. This phase not only involved identifying user and system needs but also translating them into actionable specifications that could align product functionality with business objectives.
+
+The goal was to ensure that product development remained user-centric, responsive to stakeholder input, and adaptable to emerging technical opportunities. This chapter outlines the structured yet flexible process followed during the internship, covering requirement elicitation, documentation, analysis, validation, management, and iterative refinement.
+
+\section{Requirement Elicitation Techniques}
+
+The requirement elicitation process at wrkin.app combined both formal and informal strategies, adapted for the fast-paced, collaborative culture of the startup.
+
+\subsection{Stakeholder Interviews}
+
+Key stakeholders—including the CEO, product manager, and engineering leads—were interviewed during the initial onboarding phase. These interviews clarified business goals, key product differentiators, and urgent technical deliverables. Special attention was paid to aligning the requirements with the startup's go-to-market strategy, scalability needs, and mobile-first product vision.
+
+\subsection{Observation and Workflow Analysis}
+
+Since wrkin.app was in active development, live workflows and staging environments were available for exploration. Observing the real-time interactions of existing systems enabled deeper understanding of workflow bottlenecks and integration gaps. For instance, the lack of seamless transition between communication threads and task creation was noted early and became a foundation for several user stories.
+
+\subsection{Competitor Analysis}
+
+An in-depth analysis of competitors like Slack, Microsoft Teams, and Zoho Workplace was conducted. Their strengths, limitations, and market positioning helped shape wrkin.app's unique value proposition. This competitive analysis informed requirement prioritization and revealed whitespace opportunities such as better HR integration and simplified UI for SMBs.
+
+\section{Requirement Specification}
+
+\subsection{User Stories and Acceptance Criteria}
+
+A series of user stories were developed using the agile framework. Each story was written from a user's perspective and paired with clearly defined acceptance criteria. For example, "As a team lead, I want to assign a task within a chat conversation so that I don’t need to switch to another application." Acceptance criteria included UI triggers, backend response time, and notification visibility.
+
+\subsection{Functional Requirements Documentation}
+
+Functional requirements were systematically captured using a shared Confluence repository. Key modules like user onboarding, task assignment, and HR record viewing were described in terms of input/output formats, data models, error cases, and success conditions. This repository was continuously updated as new feedback emerged.
+
+\subsection{Non-Functional Requirements}
+
+Performance, security, scalability, and usability formed the backbone of non-functional requirements. For instance, real-time task updates needed to propagate across devices in under 300 milliseconds. Biometric login was mandated as a default security mechanism on mobile, and all HR data needed to be encrypted at rest and in transit.
+
+\section{Requirement Analysis and Validation}
+
+\subsection{Requirement Prioritization}
+
+Using the MoSCoW framework (Must-have, Should-have, Could-have, Won’t-have), requirements were prioritized to balance development velocity and feature criticality. Early iterations focused on must-haves like real-time messaging and HR dashboard basics, while advanced analytics and workflow automation were scheduled for later sprints.
+
+\subsection{Prototype-Based Validation}
+
+Interactive Figma prototypes were used to validate high-priority features before development. These mockups allowed stakeholders to visualize user flows, provide feedback, and identify potential usability issues. This reduced redesign efforts during implementation.
+
+\subsection{Review Sessions and Feedback Loops}
+
+Sprint planning meetings and weekly reviews enabled continuous validation of evolving requirements. Peer reviews and QA tester feedback played a major role in refining requirements post-development, especially for complex modules like performance tracking and integrated notifications.
+
+\section{Requirement Management and Traceability}
+
+\subsection{Requirement Tracking Tools}
+
+Jira was used as the central platform for requirement tracking. User stories, bug reports, technical debts, and enhancement suggestions were logged and updated systematically. Dependencies were tracked using issue links, and the history feature helped trace evolving requirement contexts.
+
+\subsection{Traceability Matrix}
+
+A traceability matrix was constructed to map requirements to test cases, ensuring all scenarios were covered and that nothing fell through the cracks. This matrix also helped demonstrate compliance with data protection norms by mapping sensitive data handling requirements to specific encryption and access control implementations.
+
+\section{Case Study: Generative AI Integration Requirements}
+
+\subsection{Business Need Identification}
+
+One of the most transformative features under development was an AI-powered chatbot capable of responding to HR and task-related queries. The need arose from a desire to reduce admin workload and enhance user experience.
+
+\subsection{Requirement Specification Approach}
+
+Requirements were gathered through brainstorming sessions with the product team and AI engineers. Use cases included leave requests, task status queries, and HR policy lookups. These were documented with fallback logic, input validation rules, and NLP thresholds.
+
+\subsection{Validation and Refinement Process}
+
+Initial chatbot prototypes were tested against mock queries. Feedback revealed gaps in fallback responses and multilingual understanding, which led to an expansion of the training dataset and user intent categories.
+
+\section{Challenges and Lessons Learned}
+
+\subsection{Requirement Engineering Challenges}
+
+Maintaining consistent documentation during rapid iteration cycles was a significant challenge. Ambiguity in initial requirements occasionally led to rework. Balancing technical feasibility with business ambition required continuous negotiation.
+
+\subsection{Effective Practices Identified}
+
+Embedding requirement review checkpoints into sprint reviews proved effective in catching gaps early. Using visual wireframes also helped align understanding across technical and non-technical stakeholders.
+
+\subsection{Areas for Process Improvement}
+
+Automated tools for requirement version control and integrated user feedback analytics could further streamline the process. Future cycles could benefit from tighter integration between support tickets and requirement refinement.
+
+\section{Conclusion}
+
+Requirement engineering at wrkin.app was a living process—continuous, adaptive, and collaborative. From eliciting insights through interviews and competitor analysis to specifying detailed functional documents and validating them via prototypes, each step reinforced the importance of clarity and user-centricity. The lessons learned in this phase not only enhanced the product’s alignment with market needs but also provided deep insight into how agile requirement engineering works in real-world startup environments.
